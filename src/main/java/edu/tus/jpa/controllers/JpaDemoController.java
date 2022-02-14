@@ -20,6 +20,7 @@ public class JpaDemoController
 
     @GetMapping("/courses")
     public List<Course> getCourses() {
+    	System.out.print("Jenkins bulid test...");
         return courseRepository.findAll();
     }
 
